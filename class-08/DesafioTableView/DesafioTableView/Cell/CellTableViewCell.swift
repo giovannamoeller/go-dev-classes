@@ -22,10 +22,8 @@ class CellTableViewCell: UITableViewCell {
   func setPerson(person: Person) {
     self.person = person
     backgroundColor = person.color
-    //nameLabel.text = person.name
-    //roleAgeLabel.text = "\(String(describing: person.role)) - \(String(describing: person.age))"
-    nameLabel.text = self.person?.name
-    roleAgeLabel.text = "\(String(describing: self.person?.role ?? "")) - \(String(describing: self.person?.age ?? 0))"
+    nameLabel.text = person.name
+    roleAgeLabel.text = "\(String(describing: person.role)) - \(String(describing: person.age))"
   }
   
 }
