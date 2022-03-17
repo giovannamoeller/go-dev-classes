@@ -68,29 +68,45 @@
 		487F04B127E29D8F007847CA /* Challenge */ = {
 			isa = PBXGroup;
 			children = (
-				487F04CC27E2A3C5007847CA /* Cell */,
+				48A11B5F27E3A47700A26C22 /* Model */,
+				48A11B5E27E3A46600A26C22 /* Controller */,
+				487F04CC27E2A3C5007847CA /* TableViewCell */,
 				487F04B227E29D8F007847CA /* AppDelegate.swift */,
 				487F04B427E29D8F007847CA /* SceneDelegate.swift */,
-				487F04B627E29D8F007847CA /* ViewController.swift */,
 				487F04B827E29D8F007847CA /* Main.storyboard */,
 				487F04BB27E29D8F007847CA /* Assets.xcassets */,
 				487F04BD27E29D8F007847CA /* LaunchScreen.storyboard */,
 				487F04C027E29D8F007847CA /* Info.plist */,
-				487F04C627E29F60007847CA /* SobreViewController.swift */,
-				487F04CA27E29F97007847CA /* HomeViewController.swift */,
-				487F04C827E29F8A007847CA /* CategoriasViewController.swift */,
-				487F04D127E36BCF007847CA /* Movie.swift */,
 			);
 			path = Challenge;
 			sourceTree = "<group>";
 		};
-		487F04CC27E2A3C5007847CA /* Cell */ = {
+		487F04CC27E2A3C5007847CA /* TableViewCell */ = {
 			isa = PBXGroup;
 			children = (
 				487F04CD27E2A3DB007847CA /* CustomTableViewCell.swift */,
 				487F04CE27E2A3DB007847CA /* CustomTableViewCell.xib */,
 			);
-			path = Cell;
+			path = TableViewCell;
+			sourceTree = "<group>";
+		};
+		48A11B5E27E3A46600A26C22 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				487F04B627E29D8F007847CA /* ViewController.swift */,
+				487F04C627E29F60007847CA /* SobreViewController.swift */,
+				487F04CA27E29F97007847CA /* HomeViewController.swift */,
+				487F04C827E29F8A007847CA /* CategoriasViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		48A11B5F27E3A47700A26C22 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				487F04D127E36BCF007847CA /* Movie.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

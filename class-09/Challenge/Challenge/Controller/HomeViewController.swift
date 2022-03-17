@@ -9,8 +9,6 @@ import UIKit
 
 class HomeViewController: UIViewController {
   
-  var carros = ["BMW", "Audi", "Tesla", "Model S", "Mach-I", "Mach-1"]
-  
   @IBOutlet weak var tableView: UITableView!
   
   override func viewDidLoad() {
@@ -30,7 +28,7 @@ class HomeViewController: UIViewController {
 extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
     let cell = tableView.dequeueReusableCell(withIdentifier: CustomTableViewCell.identifier, for: indexPath) as? CustomTableViewCell
-    cell?.setUp(carro: carros[indexPath.row])
+    cell?.setUp(movie: MoviesLibrary.movies[indexPath.row])
     return cell ?? UITableViewCell()
   }
   
@@ -39,10 +37,7 @@ extension HomeViewController: UITableViewDelegate, UITableViewDataSource {
   }
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return carros.count
+    return MoviesLibrary.movies.count
   }
   
-  func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-    return 80
-  }
 }
