@@ -92,7 +92,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7Ge-b4-sKd">
-                                <rect key="frame" x="0.0" y="44" width="414" height="769"/>
+                                <rect key="frame" x="48" y="108" width="318" height="705"/>
                                 <color key="backgroundColor" red="0.13725490196078433" green="0.0" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="tl6-SI-I9u">
                                     <size key="itemSize" width="128" height="128"/>
@@ -108,7 +108,7 @@
                                             <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </collectionViewCellContentView>
-                                        <color key="backgroundColor" red="0.63137257099999999" green="0.13725490870000001" blue="0.109803915" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -116,10 +116,10 @@
                         <viewLayoutGuide key="safeArea" id="BbK-I4-V80"/>
                         <color key="backgroundColor" red="0.13725490196078433" green="0.0" blue="0.2627450980392157" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="7Ge-b4-sKd" firstAttribute="leading" secondItem="BbK-I4-V80" secondAttribute="leading" id="5Za-0U-S3N"/>
-                            <constraint firstItem="BbK-I4-V80" firstAttribute="trailing" secondItem="7Ge-b4-sKd" secondAttribute="trailing" id="Iwl-ZV-SER"/>
+                            <constraint firstItem="7Ge-b4-sKd" firstAttribute="leading" secondItem="BbK-I4-V80" secondAttribute="leading" constant="48" id="5Za-0U-S3N"/>
+                            <constraint firstItem="BbK-I4-V80" firstAttribute="trailing" secondItem="7Ge-b4-sKd" secondAttribute="trailing" constant="48" id="Iwl-ZV-SER"/>
                             <constraint firstItem="BbK-I4-V80" firstAttribute="bottom" secondItem="7Ge-b4-sKd" secondAttribute="bottom" id="jCy-sl-YAi"/>
-                            <constraint firstItem="7Ge-b4-sKd" firstAttribute="top" secondItem="BbK-I4-V80" secondAttribute="top" id="y6n-dc-GjA"/>
+                            <constraint firstItem="7Ge-b4-sKd" firstAttribute="top" secondItem="BbK-I4-V80" secondAttribute="top" constant="64" id="y6n-dc-GjA"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Categoria" image="list.dash" catalog="system" id="4dZ-pV-4vf"/>
