@@ -7,22 +7,18 @@
 
 import Foundation
 import UIKit
+import Alamofire
 
 class API {
   let URLString = "https://api.github.com/users/giovannamoeller"
   func getData(completionHandler: @escaping (User) -> Void) {
-    guard let URL = URL(string: URLString) else { return }
-    let task = URLSession.shared.dataTask(with: URL, completionHandler: { (data, response, error) in
-      if let error = error {
-        print("Erro ao consumir: \(error)")
-        return
-      }
-      if let data = data,
-         let user = try? JSONDecoder().decode(User.self, from: data) {
-        completionHandler(user)
-      }
-    })
-    task.resume()
+    
+    let request = AF.request(URLString)
+    
+    request.responseDecodable(of: User.self) { response in
+      guard let user = response.value else { return }
+      completionHandler(user)
+    }
   }
   
   func getImage(imgView: UIImageView, urlString: String) {
